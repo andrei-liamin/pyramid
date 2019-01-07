@@ -1,0 +1,18 @@
+#pyramid {
+  font-family: "Courier New", monospace;
+  line-height: 0;
+}
+.space {
+	display: inline-block;
+	background-color: white;
+	width: 15px;
+	height: 15px;
+	margin: 1px;
+}
+.hash {
+	display: inline-block;
+	background-color: brown;
+	width: 15px;
+	height: 15px;
+	margin: 1px;
+}
