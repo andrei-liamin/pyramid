@@ -4,17 +4,17 @@ let symbol = document.getElementById('symbol');
 
 steps.insertAdjacentHTML("afterend", "This is my caption.");
 
-steps.addEventListener('change', function() {
+steps.addEventListener('change', () => {
     drawPyramid(Math.round(document.getElementsByName('pyramidH')[0].value / 100 * 19) + 1, symbol.value);
 })
-symbol.addEventListener('change', function() {
+symbol.addEventListener('change', () => {
     drawPyramid(Math.round(document.getElementsByName('pyramidH')[0].value / 100 * 19) + 1, symbol.value);
 });
 
 drawPyramid(stepsValue, symbol.value);
 
 function drawPyramid(height, symb) {
-    console.log(height);
+    //console.log(height);
     deletePyramid();
     let pyramidNode = document.getElementById("pyramid");
 
